@@ -3,40 +3,23 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-bbbs.blog
+bbbs.blog - An example project for http://brunobarbosa.com.br
 ==============================================================================
 
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+This is an example project for http://brunobarbosa.com.br
 
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+This is an example project. You will find articles about it in
+http://brunobarbosa.com.br
 
 
 Installation
 ------------
+
+Copy the product to "src/" folder in your instalation;
 
 Install bbbs.blog by adding it to your buildout::
 
@@ -47,6 +30,10 @@ Install bbbs.blog by adding it to your buildout::
     eggs =
         bbbs.blog
 
+    ...
+    develop =
+        src/bbbs.blog
+
 
 and then running ``bin/buildout``
 
@@ -54,19 +41,18 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/bbbs.blog/issues
-- Source Code: https://github.com/collective/bbbs.blog
-- Documentation: https://docs.plone.org/foo/bar
+- Issue Tracker: https://github.com/brunobbbs/bbbs.blog/issues
+- Source Code: https://github.com/brunobbbs/bbbs.blog
+- Documentation: http://brunobarbosa.com.br
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, open it: https://github.com/brunobbbs/bbbs.blog/issues
 
 
 License
 -------
 
-The project is licensed under the GPLv2.
+The project is licensed under the GPLv3.
