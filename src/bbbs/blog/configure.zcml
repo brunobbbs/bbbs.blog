@@ -1,0 +1,49 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="bbbs.blog">
+
+  <includeDependencies package="." />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="bbbs.blog"
+      directory="profiles/default"
+      description="Installs the bbbs.blog add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="bbbs.blog-postInstall"
+      title="bbbs.blog post_install import step"
+      description="Post install import step from bbbs.blog"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="bbbs.blog"
+      directory="profiles/uninstall"
+      description="Uninstalls the bbbs.blog add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="bbbs.blog-uninstall"
+      title="bbbs.blog uninstall import step"
+      description="Import step run during ininstalling bbbs.blog"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="bbbs.blog-hiddenprofiles" />
+
+</configure>
