@@ -17,4 +17,12 @@
       directory="static"
       />
 
+  <browser:page
+      for="*"
+      name="my_first_view"
+      permission="zope2.View"
+      class=".views.MyFirstView"
+      template="myownview.pt"
+      />
+
 </configure>
