@@ -6,7 +6,10 @@
 bbbs.blog - An example project for my personal blog
 ==============================================================================
 
-This is an example project for http://brunobarbosa.com.br
+It isn't a blog project!
+
+This project is a couple of snippets, codes, and examples for supporting my
+articles at brunobarbosa.com.br
 
 
 Documentation
