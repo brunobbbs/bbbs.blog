@@ -3,7 +3,7 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-bbbs.blog - An example project for http://brunobarbosa.com.br
+bbbs.blog - An example project for my personal blog
 ==============================================================================
 
 This is an example project for http://brunobarbosa.com.br
